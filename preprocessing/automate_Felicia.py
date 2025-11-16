@@ -66,6 +66,6 @@ def preprocessing_data(df):
 if __name__ == "__main__":
     df = pd.read_csv("stroke_raw.csv") 
     df_train, df_test = preprocessing_data(df)
-    df_train.to_csv("stroke_preprocessing/data_train.csv", index=False)
-    df_test.to_csv("stroke_preprocessing/data_test.csv", index=False)
+    df_train.to_csv("preprocessing/stroke_preprocessing/data_train.csv", index=False)
+    df_test.to_csv("preprocessing/stroke_preprocessing/data_test.csv", index=False)
     
