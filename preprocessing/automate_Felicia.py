@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-import os
 
 def preprocessing_data(df):
     df = df.copy()
@@ -60,7 +59,6 @@ def preprocessing_data(df):
     df_train = pd.concat([X_train, y_train], axis=1)
     df_test = pd.concat([X_test, y_test], axis=1)
     
-    os.makedirs("stroke_preprocessing", exist_ok=True)
     
     return df_train, df_test
 
